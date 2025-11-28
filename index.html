@@ -5,30 +5,29 @@
   <title>Siddharth Sunil Bhosale – Risk & Data Analytics Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio of Siddharth Sunil Bhosale – Risk Analytics, Regulatory Backtesting, Data Automation and Python projects." />
+
   <style>
     :root {
       --bg: #020617;
-      --bg-alt: #020817;
       --card: #0f172a;
-      --card-alt: #020617;
+      --card-dark: #0b1120;
       --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.1);
       --text: #e5e7eb;
-      --muted: #9ca3af;
-      --border: #1f2937;
+      --muted: #94a3b8;
+      --border: rgba(148, 163, 184, 0.25);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #020617 0, #000 55%);
+      background: radial-gradient(circle at top, #020617, #000 80%);
       color: var(--text);
-      line-height: 1.6;
+      padding-bottom: 60px;
     }
 
     a {
@@ -40,441 +39,425 @@
     }
 
     .page {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 24px 16px 64px;
+      max-width: 1080px;
+      margin: auto;
+      padding: 20px 18px;
     }
 
     header {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      padding: 24px 20px;
-      margin-bottom: 24px;
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.6));
+      padding: 26px 22px;
+      background: linear-gradient(135deg, #0f172ad5, #0f172a90);
+      border: 1px solid var(--border);
       border-radius: 18px;
-      border: 1px solid rgba(148, 163, 184, 0.2);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
-      backdrop-filter: blur(24px);
+      margin-bottom: 24px;
+      backdrop-filter: blur(22px);
+      box-shadow: 0 12px 40px #0f172a;
     }
 
     header h1 {
-      font-size: 1.6rem;
-      letter-spacing: 0.04em;
+      font-size: 1.8rem;
+      margin-bottom: 4px;
     }
     header h2 {
-      font-size: 0.98rem;
-      font-weight: 400;
+      font-size: 1rem;
       color: var(--muted);
-    }
-
-    .header-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      font-size: 0.86rem;
-      color: var(--muted);
-    }
-
-    .chip {
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.33);
-      background: rgba(15, 23, 42, 0.75);
+      margin-bottom: 12px;
     }
 
     .links-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 4px;
+      gap: 10px;
+      margin-top: 14px;
     }
 
     .btn-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
+      padding: 7px 14px;
+      border: 1px solid var(--border);
       border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.3);
-      font-size: 0.84rem;
-      background: rgba(15, 23, 42, 0.9);
-      cursor: pointer;
-      transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+      background: #0f172ab0;
+      color: var(--text);
+      font-size: 0.85rem;
     }
     .btn-link:hover {
-      background: rgba(56, 189, 248, 0.12);
+      background: rgba(56,189,248,0.15);
       border-color: var(--accent);
-      text-decoration: none;
       transform: translateY(-1px);
-    }
-
-    .btn-pill {
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      font-size: 0.8rem;
-      background: rgba(15, 23, 42, 0.85);
-      color: var(--muted);
-      display: inline-flex;
-      gap: 6px;
-      align-items: center;
     }
 
     main {
       display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 1.2fr);
-      gap: 18px;
-      margin-top: 12px;
+      grid-template-columns: 3fr 1.1fr;
+      gap: 20px;
     }
-
-    @media (max-width: 900px) {
-      main {
-        grid-template-columns: minmax(0, 1fr);
-      }
+    @media(max-width: 900px) {
+      main { grid-template-columns: 1fr; }
     }
 
     .section {
-      margin-bottom: 24px;
-      padding: 18px 20px;
+      background: radial-gradient(circle at top, #0f172ae0, #0b1120f0);
+      border: 1px solid var(--border);
       border-radius: 18px;
-      border: 1px solid rgba(148, 163, 184, 0.25);
-      background: radial-gradient(circle at top left, rgba(15,23,42,0.9), rgba(15,23,42,0.85));
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.75);
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px #0f172a;
     }
 
     .section h3 {
       font-size: 1rem;
+      letter-spacing: .08em;
       margin-bottom: 10px;
-      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--muted);
-    }
-
-    .section p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 6px;
     }
 
     .projects {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
     }
 
     .project-card {
-      padding: 14px 14px 12px;
-      border-radius: 14px;
-      background: radial-gradient(circle at top, var(--card), var(--card-alt));
-      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 18px;
+      background: linear-gradient(180deg, #0f172a, #0b1120);
+      border: 1px solid var(--border);
+      border-radius: 16px;
     }
 
     .project-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .project-title {
-      font-size: 0.98rem;
+      font-size: 1rem;
       font-weight: 600;
-    }
-    .project-tag {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      background: rgba(15, 23, 42, 0.9);
     }
 
     .project-meta {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--muted);
-      margin-bottom: 6px;
+    }
+
+    .project-tag {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #0f172aa0;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
 
     .project-body {
-      font-size: 0.86rem;
+      margin-top: 6px;
+      font-size: 0.9rem;
       color: var(--muted);
     }
 
     .project-body ul {
-      margin: 6px 0 2px;
-      padding-left: 18px;
-    }
-
-    .project-body li {
-      margin-bottom: 4px;
+      margin-top: 6px;
+      padding-left: 22px;
     }
 
     .project-links {
-      margin-top: 6px;
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .btn-pill {
+      font-size: 0.82rem;
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #0f172ac0;
+      color: var(--text);
+    }
+    .btn-pill:hover {
+      background: rgba(56,189,248,0.15);
+      border-color: var(--accent);
     }
 
     .project-image {
-      margin-top: 10px;
-      border-radius: 10px;
+      margin-top: 12px;
+      border-radius: 12px;
       overflow: hidden;
-      border: 1px solid rgba(148, 163, 184, 0.3);
+      border: 1px solid var(--border);
     }
-
     .project-image img {
       width: 100%;
-      display: block;
     }
 
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
+    aside .sidebar-section {
+      margin-bottom: 20px;
+      border-radius: 16px;
+      background: #0b1120;
+      border: 1px solid var(--border);
+      padding: 18px;
+    }
+
+    .skills-list, .sidebar-section ul {
+      margin-top: 8px;
+      list-style: none;
+      padding-left: 0;
     }
 
     .skill-pill {
-      padding: 4px 9px;
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 4px 10px;
+      background: #0f172a;
+      border: 1px solid var(--border);
       border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.3);
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       color: var(--muted);
-      background: rgba(15, 23, 42, 0.75);
-    }
-
-    .sidebar-section {
-      padding: 16px 16px 14px;
-      border-radius: 16px;
-      background: radial-gradient(circle at top, var(--card), #020617);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 14px;
-    }
-
-    .sidebar-section h4 {
-      font-size: 0.92rem;
-      margin-bottom: 6px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .sidebar-section p,
-    .sidebar-section li {
-      font-size: 0.86rem;
-      color: var(--muted);
-    }
-
-    .sidebar-section ul {
-      padding-left: 16px;
-      margin-top: 4px;
     }
 
     footer {
-      margin-top: 24px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(31, 41, 55, 0.9);
-      font-size: 0.8rem;
-      color: var(--muted);
+      margin-top: 40px;
       text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="page">
-    <header>
-      <div>
-        <h1>Siddharth Sunil Bhosale</h1>
-        <h2>Risk & Compliance Analytics · Python · Data Quality & Automation</h2>
-      </div>
+<div class="page">
 
-      <div class="header-meta">
-        <span class="chip">M.Eng. Artificial Intelligence Engineering</span>
-        <span class="chip">Risk & Data Analytics Portfolio</span>
-      </div>
+<header>
+  <h1>Siddharth Sunil Bhosale</h1>
+  <h2>Risk & Compliance Analytics · Data Quality · Python Automation</h2>
 
-      <div class="links-row">
-        <a class="btn-link" href="https://github.com/bhosalesiddharth30" target="_blank" rel="noopener noreferrer">
-          <span>GitHub Profile</span>
-        </a>
-        <a class="btn-link" href="https://github.com/bhosalesiddharth30/regulatory-var-es-backtesting-engine" target="_blank" rel="noopener noreferrer">
-          <span>VaR Engine Repo</span>
-        </a>
-        <a class="btn-link" href="Portfolio_VaR_Backtesting_Siddharth_Bhosale.pdf" target="_blank" rel="noopener noreferrer">
-          <span>Download Project PDF</span>
-        </a>
-      </div>
-    </header>
+  <div class="links-row">
+    <a class="btn-link" href="https://github.com/bhosalesiddharth30" target="_blank">GitHub</a>
+    <a class="btn-link" href="https://www.linkedin.com/in/siddharth-bhosale-6164831bb/" target="_blank">LinkedIn</a>
+    <a class="btn-link" href="Portfolio_VaR_Backtesting_Siddharth_Bhosale.pdf" target="_blank">Download Project PDF</a>
+  </div>
+</header>
 
-    <main>
-      <!-- MAIN CONTENT -->
-      <section class="section">
-        <h3>About</h3>
-        <p>
-          I am a Master's student in <strong>Artificial Intelligence Engineering</strong> with a strong focus on
-          <strong>Risk & Compliance analytics</strong>, <strong>exceptions management</strong>, and
-          <strong>data quality controls</strong>. I enjoy building practical tools that combine
-          quantitative methods with clean reporting and documentation.
-        </p>
-        <p>
-          This page highlights selected projects in <strong>regulatory-style VaR backtesting</strong> and
-          <strong>data automation</strong> that demonstrate my ability to work with controls, reconciliations,
-          ETL workflows, and dashboards using <strong>Python, SQL, Excel, and Power BI</strong>.
-        </p>
-      </section>
+<main>
+  <section class="section">
+    <h3>About</h3>
+    <p>
+      I am a Master's student in <strong>Artificial Intelligence Engineering</strong> with strong focus on
+      <strong>Risk Analytics, Compliance Controls, Data Quality Checks, Exceptions Monitoring</strong> and
+      <strong>Python-based automation</strong>.
+    </p>
+  </section>
 
-      <section class="section">
-        <h3>Featured Projects</h3>
-
-        <div class="projects">
-          <!-- PROJECT 1 -->
-          <article class="project-card">
-            <div class="project-header">
-              <div>
-                <div class="project-title">Regulatory VaR Backtesting Engine (Basel Traffic-Light)</div>
-                <div class="project-meta">Python · Pandas · NumPy · Matplotlib</div>
-              </div>
-              <span class="project-tag">Regulatory Backtesting</span>
-            </div>
-
-            <div class="project-body">
-              <p>
-                End-to-end Basel-style VaR backtesting framework including exceptions count, Kupiec Proportion-of-Failures test,
-                and traffic-light classification (Green / Yellow / Red) with automated reporting.
-              </p>
-              <ul>
-                <li>Computes 1-day 99% Historical VaR with rolling-window estimation.</li>
-                <li>Detects and counts VaR breaches (exceptions) and compares against Basel thresholds.</li>
-                <li>Implements Kupiec LR test to statistically evaluate model calibration.</li>
-                <li>Generates markdown risk reports summarizing confidence level, breach count, LR statistic and traffic-light zone.</li>
-              </ul>
-            </div>
-
-            <div class="project-links">
-              <a class="btn-pill" href="https://github.com/bhosalesiddharth30/regulatory-var-es-backtesting-engine" target="_blank" rel="noopener noreferrer">
-                View Code
-              </a>
-              <a class="btn-pill" href="Portfolio_VaR_Backtesting_Siddharth_Bhosale.pdf" target="_blank" rel="noopener noreferrer">
-                PDF Summary
-              </a>
-            </div>
-
-            <div class="project-image">
-              <img src="imgs/var_plot.png" alt="Daily Returns vs 99% VaR chart" />
-            </div>
-            <div class="project-image" style="margin-top:8px;">
-              <img src="imgs/basel_report.png" alt="Basel Backtesting Report screenshot" />
-            </div>
-          </article>
-
-          <!-- PROJECT 2 -->
-          <article class="project-card">
-            <div class="project-header">
-              <div>
-                <div class="project-title">Equity Research Data Automation Dashboard</div>
-                <div class="project-meta">Python · Pandas · Excel · Power BI</div>
-              </div>
-              <span class="project-tag">Data Automation</span>
-            </div>
-
-            <div class="project-body">
-              <p>
-                Automation pipeline for sourcing, cleaning and merging equity and macro-economic datasets and delivering
-                Excel/BI dashboards for research workflows.
-              </p>
-              <ul>
-                <li>Ingests and normalises raw equity & macro data using Python (Pandas).</li>
-                <li>Exports clean tables to Excel dashboards with auto-refresh and filterable views.</li>
-                <li>Implements simple anomaly flags for unusual price moves to support research signals.</li>
-              </ul>
-            </div>
-
-            <div class="project-links">
-              <a class="btn-pill" href="https://github.com/bhosalesiddharth30/equity-research-data-automation" target="_blank" rel="noopener noreferrer">
-                View Code
-              </a>
-            </div>
-          </article>
-
-          <!-- WORK IN PROGRESS -->
-          <article class="project-card">
-            <div class="project-header">
-              <div>
-                <div class="project-title">Work in Progress – Risk & Data Quality Projects</div>
-                <div class="project-meta">Concepts in development</div>
-              </div>
-              <span class="project-tag">In Progress</span>
-            </div>
-
-            <div class="project-body">
-              <p>These projects are currently under active development and will be published once stable:</p>
-              <ul>
-                <li>
-                  <strong>Interest Rate Forecasting System</strong> – time-series and state-space models (Kalman,
-                  regime switching, ML) to forecast policy rates with uncertainty bands.
-                </li>
-                <li>
-                  <strong>Trade Data Quality & Exception Engine</strong> – rule-based checks, reconciliations and
-                  exception logs for trade/position data to support regulatory reporting workflows.
-                </li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- SIDEBAR -->
-      <aside>
-        <div class="sidebar-section">
-          <h4>Skills Snapshot</h4>
-          <div class="skills-list">
-            <span class="skill-pill">Risk & Compliance</span>
-            <span class="skill-pill">Exceptions Management</span>
-            <span class="skill-pill">Reconciliations</span>
-            <span class="skill-pill">Data Quality Checks</span>
-            <span class="skill-pill">ETL Workflows</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">Pandas</span>
-            <span class="skill-pill">NumPy</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">Excel</span>
-            <span class="skill-pill">Power BI</span>
-            <span class="skill-pill">Jupyter Notebook</span>
+  <section class="section">
+    <h3>Projects</h3>
+    <div class="projects">
+      <!-- PROJECT 1 – VaR Backtesting -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Regulatory VaR Backtesting Engine (Basel Traffic-Light)</div>
+            <div class="project-meta">Python · Pandas · NumPy · Matplotlib</div>
           </div>
+          <span class="project-tag">Regulatory Backtesting</span>
         </div>
 
-        <div class="sidebar-section">
-          <h4>Regulatory Concepts</h4>
-          <p>Currently building foundational knowledge around:</p>
+        <div class="project-body">
+          <p>Basel-style VaR backtesting with exceptions count, Kupiec POF test, and traffic-light classification.</p>
           <ul>
-            <li>EMIR – trade reporting requirements</li>
-            <li>SFTR – securities financing transaction reporting</li>
-            <li>MiFID II – transparency & transaction reporting</li>
-            <li>Basel Traffic-Light backtesting framework</li>
+            <li>1-day 99% Historical VaR with rolling window.</li>
+            <li>Exception detection & traffic-light thresholds.</li>
+            <li>Kupiec LR test for model validation.</li>
+            <li>Automated markdown risk reports.</li>
           </ul>
         </div>
 
-        <div class="sidebar-section">
-          <h4>Contact</h4>
-          <p>Email: <a href="mailto:bhosalesiddharth1030@gmail.com">bhosalesiddharth1030@gmail.com</a></p>
-          <p>GitHub: <a href="https://github.com/bhosalesiddharth30" target="_blank" rel="noopener noreferrer">bhosalesiddharth30</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/siddharth-bhosale-6164831bb/" target="_blank" rel="noopener noreferrer">View profile</a></p>
+        <div class="project-links">
+          <a class="btn-pill" href="https://github.com/bhosalesiddharth30/regulatory-var-es-backtesting-engine" target="_blank">View Code</a>
+          <a class="btn-pill" href="Portfolio_VaR_Backtesting_Siddharth_Bhosale.pdf" target="_blank">PDF Summary</a>
         </div>
-      </aside>
-    </main>
 
-    <footer>
-      © <span id="year"></span> Siddharth Sunil Bhosale · Built with GitHub Pages
-    </footer>
-  </div>
+        <div class="project-image"><img src="imgs/var_plot.png" /></div>
+        <div class="project-image" style="margin-top:8px;"><img src="imgs/basel_report.png" /></div>
+      </article>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <!-- PROJECT 2 – Equity Automation -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Equity Research Data Automation Dashboard</div>
+            <div class="project-meta">Python · Pandas · Excel · Power BI</div>
+          </div>
+          <span class="project-tag">Data Automation</span>
+        </div>
+
+        <div class="project-body">
+          <p>Automated sourcing, cleaning and merging of equity & macro datasets with dashboards.</p>
+          <ul>
+            <li>Python-based ETL workflow.</li>
+            <li>Excel dashboards with auto-refresh.</li>
+            <li>Anomaly detection for unusual price movement.</li>
+          </ul>
+        </div>
+
+        <div class="project-links">
+          <a class="btn-pill" href="https://github.com/bhosalesiddharth30/equity-research-data-automation" target="_blank">View Code</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 – Work in Progress -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Work in Progress – Risk & Data Quality</div>
+            <div class="project-meta">Concepts in development</div>
+          </div>
+          <span class="project-tag">In Progress</span>
+        </div>
+
+        <div class="project-body">
+          <ul>
+            <li>Interest Rate Forecasting using Kalman + ML.</li>
+            <li>Trade Data Quality Engine with exception logs.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 – Interest Rate Forecasting -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Interest-Rate & Macroeconomic Regime Forecasting (Thesis)</div>
+            <div class="project-meta">Python · Kalman Filter · Regime Switching · ML</div>
+          </div>
+          <span class="project-tag">Macro Risk</span>
+        </div>
+
+        <div class="project-body">
+          <p>Macro–ML hybrid model detecting policy shifts using Taylor Rule features & state-space modeling.</p>
+          <ul>
+            <li>Inflation gap, output gap & r* using ML-enhanced Taylor Rule.</li>
+            <li>Kalman Filter + Regime Switching for regime detection.</li>
+            <li>Scenario forecasts with confidence intervals.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- PROJECT 5 – Risk & Sentiment System -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Risk & Market Sentiment Intelligence System</div>
+            <div class="project-meta">Python · FinBERT · SQL · Power BI</div>
+          </div>
+          <span class="project-tag">Sentiment Analytics</span>
+        </div>
+
+        <div class="project-body">
+          <p>Sentiment-driven early-warning indicators extracted from financial news.</p>
+          <ul>
+            <li>Entity-level sentiment extraction using FinBERT.</li>
+            <li>Detection of stress, volatility spikes & uncertainty.</li>
+            <li>Power BI dashboards for risk monitoring.</li>
+          </ul>
+        </div>
+
+        <div class="project-links">
+          <a class="btn-pill" href="https://github.com/bhosalesiddharth30/Energy-Market-Sentiment-Analysis-and-Price-Forecasting" target="_blank">View Code</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 6 – Cointegration Trading -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Cointegration-Based Pairs Trading & Spread Modeling</div>
+            <div class="project-meta">Python · Statsmodels · Pandas</div>
+          </div>
+          <span class="project-tag">Statistical Modeling</span>
+        </div>
+
+        <div class="project-body">
+          <p>Mean-reversion modeling using cointegration for cross-market spread relationships.</p>
+          <ul>
+            <li>50+ pairs tested using ADF & Engle–Granger.</li>
+            <li>Reversion signals for hedging & exposure management.</li>
+            <li>Backtested Sharpe ratio of 2.1.</li>
+          </ul>
+        </div>
+
+        <div class="project-links">
+          <a class="btn-pill" href="https://github.com/bhosalesiddharth30/Cointegration_Strategy_HDFC_ICICI" target="_blank">View Code</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 7 – Probabilistic Transformer -->
+      <article class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Probabilistic Transformer for Power-Market Forecasting</div>
+            <div class="project-meta">PyTorch · Transformers · ENTSO-E</div>
+          </div>
+          <span class="project-tag">Forecasting</span>
+        </div>
+
+        <div class="project-body">
+          <p>Deep-learning quantile forecasting with uncertainty bands.</p>
+          <ul>
+            <li>Quantile Transformer with volatility-aware training.</li>
+            <li>Weather & load feature engineering.</li>
+            <li>Automated drift monitoring for model performance.</li>
+          </ul>
+        </div>
+
+        <div class="project-links">
+          <a class="btn-pill" href="https://github.com/bhosalesiddharth30/Probabilistic_Transformer_PowerMarket_Forecasting" target="_blank">View Code</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <aside>
+    <div class="sidebar-section">
+      <h4>Skills Snapshot</h4>
+      <div class="skills-list">
+        <span class="skill-pill">Risk Controls</span>
+        <span class="skill-pill">Reconciliations</span>
+        <span class="skill-pill">Exceptions</span>
+        <span class="skill-pill">ETL Workflows</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">Excel</span>
+        <span class="skill-pill">Power BI</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h4>Regulatory Concepts</h4>
+      <ul>
+        <li>EMIR</li>
+        <li>SFTR</li>
+        <li>MiFID II</li>
+        <li>Basel Traffic-Light</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:bhosalesiddharth1030@gmail.com">bhosalesiddharth1030@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/bhosalesiddharth30" target="_blank">bhosalesiddharth30</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/siddharth-bhosale-6164831bb/" target="_blank">View Profile</a></p>
+    </div>
+  </aside>
+
+</main>
+
+<footer>
+  © <script>document.write(new Date().getFullYear());</script> Siddharth Sunil Bhosale · Built with GitHub Pages
+</footer>
+
+</div>
 </body>
 </html>
