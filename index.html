@@ -124,9 +124,8 @@
       border-radius: 16px;
     }
 
+    /* SIMPLIFIED HEADER – NO FLEX, TAG BELOW TITLE */
     .project-header {
-      display: flex;
-      justify-content: space-between;
       margin-bottom: 8px;
     }
 
@@ -141,14 +140,17 @@
     }
 
     .project-tag {
-      font-size: 0.72rem;
-      padding: 3px 8px;
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.7rem;
+      padding: 2px 8px;
       border: 1px solid var(--border);
       border-radius: 999px;
-      background: #0f172aa0;
+      background: #0b1120;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
     }
 
     .project-body {
@@ -256,10 +258,8 @@
       <!-- PROJECT 1 – VaR Backtesting -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Regulatory VaR Backtesting Engine (Basel Traffic-Light)</div>
-            <div class="project-meta">Python · Pandas · NumPy · Matplotlib</div>
-          </div>
+          <div class="project-title">Regulatory VaR Backtesting Engine (Basel Traffic-Light)</div>
+          <div class="project-meta">Python · Pandas · NumPy · Matplotlib</div>
           <span class="project-tag">Regulatory Backtesting</span>
         </div>
 
@@ -285,10 +285,8 @@
       <!-- PROJECT 2 – Equity Automation -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Equity Research Data Automation Dashboard</div>
-            <div class="project-meta">Python · Pandas · Excel · Power BI</div>
-          </div>
+          <div class="project-title">Equity Research Data Automation Dashboard</div>
+          <div class="project-meta">Python · Pandas · Excel · Power BI</div>
           <span class="project-tag">Data Automation</span>
         </div>
 
@@ -309,10 +307,8 @@
       <!-- PROJECT 3 – Work in Progress -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Work in Progress – Risk & Data Quality</div>
-            <div class="project-meta">Concepts in development</div>
-          </div>
+          <div class="project-title">Work in Progress – Risk & Data Quality</div>
+          <div class="project-meta">Concepts in development</div>
           <span class="project-tag">In Progress</span>
         </div>
 
@@ -327,10 +323,8 @@
       <!-- PROJECT 4 – Interest Rate Forecasting -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Interest-Rate & Macroeconomic Regime Forecasting (Thesis)</div>
-            <div class="project-meta">Python · Kalman Filter · Regime Switching · ML</div>
-          </div>
+          <div class="project-title">Interest-Rate & Macroeconomic Regime Forecasting (Thesis)</div>
+          <div class="project-meta">Python · Kalman Filter · Regime Switching · ML</div>
           <span class="project-tag">Macro Risk</span>
         </div>
 
@@ -347,10 +341,8 @@
       <!-- PROJECT 5 – Risk & Sentiment System -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Risk & Market Sentiment Intelligence System</div>
-            <div class="project-meta">Python · FinBERT · SQL · Power BI</div>
-          </div>
+          <div class="project-title">Risk & Market Sentiment Intelligence System</div>
+          <div class="project-meta">Python · FinBERT · SQL · Power BI</div>
           <span class="project-tag">Sentiment Analytics</span>
         </div>
 
@@ -371,10 +363,8 @@
       <!-- PROJECT 6 – Cointegration Trading -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Cointegration-Based Pairs Trading & Spread Modeling</div>
-            <div class="project-meta">Python · Statsmodels · Pandas</div>
-          </div>
+          <div class="project-title">Cointegration-Based Pairs Trading & Spread Modeling</div>
+          <div class="project-meta">Python · Statsmodels · Pandas</div>
           <span class="project-tag">Statistical Modeling</span>
         </div>
 
@@ -395,10 +385,8 @@
       <!-- PROJECT 7 – Probabilistic Transformer -->
       <article class="project-card">
         <div class="project-header">
-          <div>
-            <div class="project-title">Probabilistic Transformer for Power-Market Forecasting</div>
-            <div class="project-meta">PyTorch · Transformers · ENTSO-E</div>
-          </div>
+          <div class="project-title">Probabilistic Transformer for Power-Market Forecasting</div>
+          <div class="project-meta">PyTorch · Transformers · ENTSO-E</div>
           <span class="project-tag">Forecasting</span>
         </div>
 
